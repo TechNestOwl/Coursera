@@ -23,6 +23,13 @@
 // let newNumb = 12;
 // console.log( newNumb < 10 || newNumb > 100 );
 
+// let timeRemaining = 2;
+// let energy = 10;
+
+// console.log(timeRemaining < 1 || energy < 1, "game over")
+
+// console.log("Game Over:", timeRemaining == 0 || energy == 0);
+
 
 //Not operator !
 
@@ -39,3 +46,23 @@
 //  let guests =22;
 
 //  console.log(guests % restaurant, "Guests will be without a seat");
+
+// The strict inequality operator does the same but also checks for data type.
+
+// console.log( 5 !== "5");
+// returns true because the arguments are of different data types. 
+
+
+//      ---Using the modular opertor % ---
+
+let num1 = 2;
+let num2 = 89;
+
+let test1 = num1 % 2; //returns the raminder 
+let test2 = num2 % 2; 
+
+let result1 = test1 == 0;
+let result2 = test2 !== 0;
+
+console.log(`Is ${num1} an even number?`, result1);// determine if num1 is even
+console.log(`Is ${num2} an odd number?`, result2);// determine if num2 is odd
