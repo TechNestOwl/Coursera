@@ -55,7 +55,7 @@
 
 //      ---Using the modular opertor % ---
 
-// let num1 = 2;
+// let num1 = 3.4;
 // let num2 = 89;
 
 // let test1 = num1 % 2; //returns the raminder 
@@ -84,3 +84,47 @@
 // console.log(counter);
 // let num1 = 5;
 // console.log(num1 + "test");
+
+
+//      ---Conditional Statements---
+// "flow condition statements"
+
+// if (condition is true){
+    //execute this code
+//}
+
+// if (result1 == true){
+//     console.log (num1 + " is an even number");
+// }else {
+//     console.log(num1 + " is not an even number");
+// }
+
+let placement = "second";
+
+// if(placement == "first"){
+//     console.log("GOLD")
+// }else if (placement == "second"){
+//     console.log("SILVER")
+// }else if(placement == "third"){
+//     console.log("BRONZE")
+// }else {
+//     console.log("You did not qulify");
+// };
+
+//      ---Switch---
+
+switch(placement){
+    case "first":
+    console.log("gold");
+    break;
+    case "second":
+        console.log("silver");
+        break;
+    case "third":
+        console.log("bronze");
+        break;
+    default:
+        //this block will run if none of the conditions above are met
+        console.log("You did not place.");
+        break;
+}
