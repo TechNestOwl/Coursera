@@ -99,7 +99,7 @@
 //     console.log(num1 + " is not an even number");
 // }
 
-let placement = "second";
+// let placement = "fourth";
 
 // if(placement == "first"){
 //     console.log("GOLD")
@@ -113,18 +113,59 @@ let placement = "second";
 
 //      ---Switch---
 
-switch(placement){
-    case "first":
-    console.log("gold");
-    break;
-    case "second":
-        console.log("silver");
-        break;
-    case "third":
-        console.log("bronze");
-        break;
-    default:
-        //this block will run if none of the conditions above are met
-        console.log("You did not place.");
-        break;
-}
+// switch(placement){
+//     case "first":
+//     console.log("gold");
+//     break;
+//     case "second":
+//         console.log("silver");
+//         break;
+//     case "third":
+//         console.log("bronze");
+//         break;
+//     default:
+//         //this block will run if none of the conditions above are met
+//         console.log("You did not place.");
+//         break;
+// }
+
+// let age = 10;
+
+// if (age >= 65){
+//     console.log("You are retired")
+// }else if (age < 65 && age > 17){
+//     console.log("You are part of the workforce")
+// }else if(age <= 17){
+//     console.log("You're not a contributing member of society");
+// }else {
+//     console.log("Enter a numerical value");
+// }
+
+// let day = "Monday";
+
+// switch(day){
+//     case "Monday":
+//         console.log("Weekday");
+//         break;
+//     case "Tuesday":
+//         console.log("Weekday");
+//         break;
+//     case "Wednesday":
+//         console.log("Weekday")
+//         break;
+//     case "Thursday":
+//         console.log("Weekday");
+//         break;
+//     case "Friday":
+//         console.log("Weekday")
+//     case "Saturday":
+//         console.log("Weekend")
+//         break;
+//     case "Sunday":
+//         console.log("Weekend")
+//         break;
+//     default:
+//         //this block will run if no other conditions match
+//         console.log("What day is it??")
+//         break;
+// }
