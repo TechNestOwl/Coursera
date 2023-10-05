@@ -55,14 +55,32 @@
 
 //      ---Using the modular opertor % ---
 
-let num1 = 2;
-let num2 = 89;
+// let num1 = 2;
+// let num2 = 89;
 
-let test1 = num1 % 2; //returns the raminder 
-let test2 = num2 % 2; 
+// let test1 = num1 % 2; //returns the raminder 
+// let test2 = num2 % 2; 
 
-let result1 = test1 == 0;
-let result2 = test2 !== 0;
+// let result1 = test1 == 0;
+// let result2 = test2 !== 0;
 
-console.log(`Is ${num1} an even number?`, result1);// determine if num1 is even
-console.log(`Is ${num2} an odd number?`, result2);// determine if num2 is odd
+// console.log(`Is ${num1} an even number?`, result1);// determine if num1 is even
+// console.log(`Is ${num2} an odd number?`, result2);// determine if num2 is odd
+
+
+//     --Concatenating numbers and strings--
+// let now = "Now in ";
+// let three = 3;
+// let d = "D!";
+
+// console.log(now + three + d);
+
+// concatenating uisng += operator
+
+// let counter = 0;
+// counter += 5;
+// counter += 3;
+
+// console.log(counter);
+// let num1 = 5;
+// console.log(num1 + "test");
