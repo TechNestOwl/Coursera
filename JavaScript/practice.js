@@ -3,19 +3,17 @@
 //changing font and color 
 //console.log("%cHello World","color:blue; font-size:40px");
 
+//          ---Operators---
+
 
 //And operator '&&'
 //Using double amperstan to join to comparisons.
 // && returns of boolean value of either true or false. If both values on either side are true, the boolean return is true, otherwise it will return false
 // console.log(false && false);
 // let currentTime = 10;
-
 // console.log(currentTime > 10 && currentTime < 20);
-
-
 /* 
     || operator "or"
-
     The || operator checks to see if either comparison is true.
     The || operator will ALWAYS return true, unless both evaulations are false. 
 
@@ -171,7 +169,7 @@
 // }
 
 
-let weight = 180;
+// let weight = 180;
 // let scale = "";
 
 // if (weight > 350){ 
@@ -185,7 +183,7 @@ let weight = 180;
 
 //          ---Looping Constructs---
 
-//FOR LOOP
+//      FOR LOOP
 //Used to automate repetittion or to itterate through.
 //Set the value, specify the exit condition, increment the counter
 // for (let i = 1; i <= 10; i++){
@@ -198,10 +196,42 @@ let weight = 180;
 // if(i=1){
 //     console.log("GO!")
 // }
-//While loop
+
+// for(i =1; i <= 5;i++){
+//     console.log(i);
+// };
+// if(i = 5){console.log("Counting complete!")};
+
+// for( i=5; i>=1; i--){
+//     console.log(i);
+// }
+
+
+//     WHILE LOOP  
 
 // let i = 1;
-// while(i<=10){
+
+// while(i<=10){  //I'm giving js an expression to check, if truthy, run the procceding block of code.
 //     console.log(i);
 //     i++;
 // }
+
+// let counter = 1;
+// while(counter <= 5){
+//     console.log(counter);
+//     counter ++;
+// }
+// if (counter = 5){
+//     console.log("Counting completed!");
+// }
+// let year = 2018;
+// while( year <= 2023){
+//     console.log(year);
+//     year++;
+// }
+
+
+
+
+//          --- NESTED LOOPS ---
+
