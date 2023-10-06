@@ -169,3 +169,39 @@
 //         console.log("What day is it??")
 //         break;
 // }
+
+
+let weight = 180;
+// let scale = "";
+
+// if (weight > 350){ 
+//     console.log("You have broken the scale")
+// }else if( weight < 100){
+//     console.log("eat some food!")
+// }else {
+//     console.log("Kind of wide range, but okay, you're 'healthy'")
+// }
+
+
+//          ---Looping Constructs---
+
+//FOR LOOP
+//Used to automate repetittion or to itterate through.
+//Set the value, specify the exit condition, increment the counter
+// for (let i = 1; i <= 10; i++){
+//     console.log(i)
+// }
+
+// for(let i = 3; i >=1; i--){
+//     console.log(i);
+// }
+// if(i=1){
+//     console.log("GO!")
+// }
+//While loop
+
+// let i = 1;
+// while(i<=10){
+//     console.log(i);
+//     i++;
+// }
