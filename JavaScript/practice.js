@@ -290,7 +290,7 @@
 //         console.log("Silver Medal")
 //     }else if(i = 2){
 //         console.log("Bronze Medal")
-//     }else{console.log(placement.i)}
+//     }else{console.log(placement[i])}
 // }
 
 // for(let i = 1; i <= 10; i++){
@@ -323,3 +323,12 @@
 //         }
 // }
 
+
+// let i = 3;
+// let j = 5;
+
+// if(i == 3 && j < 5){
+//     console.log("hello")
+// }else{
+//     console.log("goodbye")
+// }
