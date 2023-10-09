@@ -51,9 +51,9 @@
 // returns true because the arguments are of different data types. 
 
 
-//      ---Using the modular opertor % ---
+//      ---Using the modulas opertor % ---
 
-// let num1 = 3.4;
+// let num1 = 3;
 // let num2 = 89;
 
 // let test1 = num1 % 2; //returns the raminder 
@@ -168,6 +168,19 @@
 //         break;
 // }
 
+// let ovenTemp = 0;
+//this is example is a poor representation of when to use a switch statment. An if statement would be better.
+// switch(ovenTemp){
+//     case 0:
+//         console.log("The oven needs to finish preheating");
+//         break;
+//     case 200:
+//         console.log("oven is halfway there");
+//         break;
+//     case 400:
+//         console.log("oven is fully preheated");
+//         break;
+// }
 
 // let weight = 180;
 // let scale = "";
@@ -183,7 +196,8 @@
 
 //          ---Looping Constructs---
 
-//      FOR LOOP
+
+//          --- FOR LOOP ---
 //Used to automate repetittion or to itterate through.
 //Set the value, specify the exit condition, increment the counter
 // for (let i = 1; i <= 10; i++){
@@ -206,8 +220,15 @@
 //     console.log(i);
 // }
 
+// let food = "cooked";
+// if (food == "cooked"){
+//     console.log("the food is ready to be served");
+// }else{
+//     console.log("the food needs to continue cooking.");
+// }
 
-//     WHILE LOOP  
+
+//          --- WHILE LOOP ---
 
 // let i = 1;
 
@@ -232,7 +253,6 @@
 
 
 
-
 //          --- NESTED LOOPS ---
 
 // Do not get carried away with nested loops. More levels = less performance and more complications.
@@ -251,3 +271,55 @@
 //         console.log(i + " divided by " + j + " equals " + i/j);
 //     }
 // };
+
+// let cubes = 'ABCDEFG';
+// //styling console output using CSS with a %c format specifier
+// for (let i = 0; i < cubes.length; i++) { // cubes.length returns the number of characters in cubes
+//     let styles = "font-size: 40px; border-radius: 10px; border: 1px solid blue; background: pink; color: purple";
+//     console.log("%c" + cubes[i], styles) // cubes[i] targets each indiviual item in the string based on the current value of i. ie: when i = 0 is "A"
+// }
+
+
+
+
+//***** broken code ******** needs further investigation
+// for(let i = 0; i < placement.length; i++){
+//     if(i=0){
+//         console.log("Gold Medal");
+//     }else if(i = 1){
+//         console.log("Silver Medal")
+//     }else if(i = 2){
+//         console.log("Bronze Medal")
+//     }else{console.log(placement.i)}
+// }
+
+// for(let i = 1; i <= 10; i++){
+//     if(i ==1){
+//         console.log("Gold Medal")
+//     }else if(i == 2){
+//         console.log("Silver Medal")
+//     }else if(i == 3){
+//         console.log("Bronze Medal")
+//     }else{
+//         console.log(i)
+//     }
+// }
+
+//same as above but with a switch statement
+
+// for(let i = 1; i <= 10; i++){
+//     switch(i){
+//         case 1:
+//             console.log("Gold Medal")
+//             break;
+//         case 2:
+//             console.log("Silver Medal")
+//             break;
+//         case 3:
+//             console.log("Broze Medal")
+//             break;
+//         default:
+//             console.log(i)
+//         }
+// }
+
