@@ -235,3 +235,19 @@
 
 //          --- NESTED LOOPS ---
 
+// Do not get carried away with nested loops. More levels = less performance and more complications.
+
+// Here I am creating a nested loop for work days in a week:
+// for(i=1; i<=2; i++){
+//     for(d=1; d <=5; d++){
+//         console.log("Week "+ i + " day " + d);
+//     }
+// };
+
+//Division
+
+// for(i=100; i > 9; i = i - 10){
+//     for(j=10; j > 4; j = j-5){
+//         console.log(i + " divided by " + j + " equals " + i/j);
+//     }
+// };
