@@ -102,6 +102,8 @@ sodas.pop();
 sodas.push("Orange","Cherry")
 // console.log(sodas);
 
+
+
 function arrayBuilder(one,two,three){
     let arr = [];
     arr.push(one);
@@ -112,6 +114,30 @@ function arrayBuilder(one,two,three){
 }
 // arrayBuilder("Apple","Pear","Mango");
 
-
 let simpleArr = arrayBuilder("Dog","Cat","Hamster");
 // console.log(simpleArr);
+
+
+
+
+//          ---Math Object Cheat Sheet---
+
+//---Number Constants
+
+// PI - Math.PI  ~ 3.14159
+//Euler's constant - Math.E ~ 2.718
+//Natural logarithim of 2 - Math.LN2 ~ 0.693
+
+//---Rounding Methods
+
+//Math.celi() - rounds up to the closest integer
+//Math.floor()- rounds down to the closest integer
+//Math.round() - rounds up to the closest integer if the decimal is .5 or above, otherwise rounds down.
+//Math.trunc() - trims the decimal, leaving only the integer
+
+//----Arithmetic and calculas methods
+
+//Math.pow(2,3) - calculates first argument to the power of second argument 
+//Math.sqrt(16) - calculaes the square root of 16
+//Math.cbrt(8) - calculates the cube root
+//Math.abs(-10) - calculates the absolute value ie: 10.
