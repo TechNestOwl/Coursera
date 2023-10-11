@@ -256,10 +256,33 @@ let addTwoNumbz = (a,b) => {
             console.log(a+b);
         }
     }catch(err){
-        console.log(err)
+        console.log("Error!", err)
     }
 };
 
-addTwoNumbz(2,"2");// concat's the two - "2string"
-console.log("Program continues running")
+// addTwoNumbz(2,"2");// concats the two arguments into a string if not for my try-catch block
+// console.log("Program continues running")
+
+//Note: Defensive programming is assuming all arguments a function will receive are of the wrong type,value, or both.
+
+function letterFinder(word,match){
+    //first, I'm checking that both arguments meet this criteria
+    let condition1 = typeof(word) == "string" && word.length > 2;
+    let condition2 = typeof(match) == "string" && match.length == 1;
+
+    if(condition1 == true && condition2 == true){//if the above criteria is met, run this block
+        for(let i = 0; i < word.length; i++){// loop through 'word' and check for instances of 'match'
+            if(word[i] == match){
+                //if the current char at position i is equal to 'match'..
+                console.log("Found the", match,"at",i)
+            }else{
+                console.log("No match found at", i)
+            }
+        }
+    }else{
+        console.log("wrong input type recieved")
+    }
+};
+
+// letterFinder("milkshake","s");
 
