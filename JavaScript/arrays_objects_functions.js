@@ -4,6 +4,34 @@
 - Handling bugs and errors using try, catch, throw and defensive programming
 
 */
+
+//String methods
+
+/*
+charAt()
+concat()
+indexOf()
+lastIndexOf()
+split()
+toUpperCase()
+toLowerCase()
+*/
+
+//Quick recap on iterating using a string as an example:
+let str = "Good evening";
+// console.log("Length of string is",str.length);
+// for(let i = 0; i < str.length; i++){
+//     console.log(str[i])
+// }
+
+// "MerryChristmas".indexOf(r);//returns the first instance of "r"
+//str.charAt(3)// returns character at index of 3
+// str.lastIndexOf(e)// returns last instance of char "e"
+// console.log("Mery-Christmas-ya-filthy-animal".split("-"))// chops list into an array of substrings at each instance of '-'
+
+
+
+
 // D.R.Y. - Don't repeat yourself
 
 
@@ -141,3 +169,37 @@ let simpleArr = arrayBuilder("Dog","Cat","Hamster");
 //Math.sqrt(16) - calculaes the square root of 16
 //Math.cbrt(8) - calculates the cube root
 //Math.abs(-10) - calculates the absolute value ie: 10.
+
+
+let decimal = Math.random() * 10; //multiplying by 10 to get a larger number. 
+// console.log(decimal)
+let rounded = Math.ceil(decimal);
+// console.log(rounded)
+
+
+let clothes = [];
+clothes.push("Orvis","Patagonia","Outdoor Research","The North Face","Perry Ellis");
+clothes.pop();
+clothes.push("Colombia");
+// console.log(clothes[2]);
+
+let favCar = {};
+favCar.color = "Shadow Mica";
+favCar.convertible = !false;
+// console.log(favCar);
+
+//When an object has a function as a property, this property is known as a "method" of that object.
+//Example: 'log' is a function of the conosle object. ---> console.log();
+
+let car = {
+    mileage: "285000",
+    color: "Shadow Mica",
+    tires: "All-terrain"
+};
+car.turnKey = function(){
+    console.log("Engine starts");
+}
+car.lightsOn = ()=>{
+    console.log("Lights switched on");
+}
+console.log(car);
