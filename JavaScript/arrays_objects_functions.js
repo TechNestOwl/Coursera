@@ -130,7 +130,8 @@ sodas.pop();
 sodas.push("Orange","Cherry")
 // console.log(sodas);
 
-
+let letters = 'abc';
+// console.log(letters.match(/a/));
 
 function arrayBuilder(one,two,three){
     let arr = [];
@@ -202,4 +203,63 @@ car.turnKey = function(){
 car.lightsOn = ()=>{
     console.log("Lights switched on");
 }
-console.log(car);
+// console.log(car.turnKey);
+// car.turnKey();
+// car.lightsOn();
+
+let test = typeof("string?");
+let test2 = typeof(3.14);
+// console.log(test2)
+
+//          ---Error handling----
+
+//interesting caveat, syntax error cannot be caught with try-catch block
+
+// try{
+//     console.log(a+b);//neither of the two arguments are defined.
+// }catch(errName){//named the caught error as an example. 
+//     console.log(errName);//displaying the caught error on the console.
+//     console.log("an error was caught, and saved in the error log");
+// }
+// console.log("program continues to run after the error was caught");
+
+// try{
+//     throw new TypeError();
+// }catch(typeofError){
+//     console.log(typeofError);
+//     console.log("The error was caught")
+// }
+// console.log("program continues to run..")
+
+//annonymous function
+(y,z) => {
+    y + z
+};
+
+function addTwoNums(a,b) {
+    try {
+        console.log(a + b)
+    } catch(err) {
+        console.log(err)
+    }
+};
+
+
+//arrow function
+let addTwoNumbz = (a,b) => {
+    try{
+        if(typeof(a) != "number"){
+           throw new ReferenceError("the first argument is not a number")
+        }else if(typeof(b) != "number"){
+            throw new ReferenceError("second argument is not a number")
+        }else{
+            console.log(a+b);
+        }
+    }catch(err){
+        console.log(err)
+    }
+};
+
+addTwoNumbz(2,"2");// concat's the two - "2string"
+console.log("Program continues running")
+
