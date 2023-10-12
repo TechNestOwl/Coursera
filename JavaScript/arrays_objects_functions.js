@@ -70,7 +70,30 @@ function letterFinder(word,match){
 }
 // letterFinder("test","t");
 
+let maintenanceItems = {
+    oil: "Needs to be changed",
+    brakes: "Needs to be examined",
+    tires: "Need to be rotated"
+}
 
+let toyota4Runner = {
+    year: 2007,
+    engine: "V6",
+    drivetrain: "2WD",
+    engineLight: false,
+};
+toyota4Runner.maintenance = maintenanceItems; // adding to object with dot notation
+toyota4Runner["Color"] = "Shadow-mica"; // adding to obj with braket notation. 
+toyota4Runner.todo = (checkLight) => {
+    if(checkLight == true){
+        console.log("nedds maintenanceItems to be checked", maintenanceItems)
+    }else{
+        console.log("no maintenance required")
+    }
+};
+
+toyota4Runner.engineLight = true;
+// console.log(toyota4Runner.todo(toyota4Runner.engineLight));
 
 
 //          ---Dot Notatation, Object Literals, and Bracket Notation---
