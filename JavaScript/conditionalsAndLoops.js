@@ -127,6 +127,35 @@
 //         break;
 // }
 
+//switch practice
+
+let dogDuties = "thirsty";
+let verifiedDutiesInput = (a) => {
+    if(typeof(a) == "string"){
+        return a;
+    }else{
+        console.log("input is not valid")
+    };
+}
+let petAction = (a) => {
+    switch(a){
+        case "thirsty":
+            console.log("Doge needs water");
+            break;
+        case "hungry":
+            console.log("doge needs to be fed");
+            break;
+        case "restless":
+            console.log("doge needs to be taken for a walk.")
+            break;
+        default:
+            console.log("doge is content")
+            break;
+    };
+};
+// petAction(verifiedDutiesInput(dogDuties));
+
+
 // let age = 10;
 
 // if (age >= 65){

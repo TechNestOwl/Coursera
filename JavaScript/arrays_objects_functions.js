@@ -70,11 +70,14 @@ function letterFinder(word,match){
 }
 // letterFinder("test","t");
 
+
+
+//simple exercise with objects/function
 let maintenanceItems = {
     oil: "Needs to be changed",
     brakes: "Needs to be examined",
     tires: "Need to be rotated"
-}
+};// creating maintenance checklist obj.
 
 let toyota4Runner = {
     year: 2007,
@@ -90,10 +93,13 @@ toyota4Runner.todo = (checkLight) => {
     }else{
         console.log("no maintenance required")
     }
-};
-
+};// function to check engineLight and perform maintenance if required
 toyota4Runner.engineLight = true;
+
 // console.log(toyota4Runner.todo(toyota4Runner.engineLight));
+
+
+
 
 
 //          ---Dot Notatation, Object Literals, and Bracket Notation---
@@ -169,6 +175,11 @@ function arrayBuilder(one,two,three){
 let simpleArr = arrayBuilder("Dog","Cat","Hamster");
 // console.log(simpleArr);
 
+let simpleArray = ["Apple", "Peach","Pear"];
+
+simpleArray.pop();
+simpleArray.push("DragonFruit")
+// console.log(simpleArray);
 
 
 
@@ -308,4 +319,17 @@ function letterFinder(word,match){
 };
 
 // letterFinder("milkshake","s");
+
+
+//functin practice with data types
+let dataVar = "test"
+
+function checkDataType(a){
+    if(typeof(a) == "string"){
+        console.log(a, "is a string datatype")
+    }else if(typeof(a) == "number"){
+        console.log(a, "is a number dataType")
+    }else{console.log(a, "is neither")}
+};
+// checkDataType(dataVar);
 
