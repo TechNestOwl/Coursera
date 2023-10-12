@@ -72,4 +72,4 @@ const globalScope = "accesed throughout the scope of the code";
     const localScope = "limited to function scope";
 };
 
-//test
+//test2
