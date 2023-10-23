@@ -72,4 +72,24 @@ const globalScope = "accesed throughout the scope of the code";
     const localScope = "limited to function scope";
 };
 
-//test2
+// Higher-order functions, accepts functionas as arguments, or returns functions when invoked
+
+
+
+
+
+
+//Just came back from a week long vacation, time to run a few refresher drills: 
+
+let vaycayStr = "I went to Disney this past week";
+let vaycayArr = ["Magic Kingdom","Universal Studios","Diagon Alley","Volcano Bay","SeaWorld",1,2,3];
+let vaycayMeals = {
+   MagicKingdom : "CheeseBurger",
+   Universal: "Fried Chicken Platter",
+   VolcanoBay: "Nothing",
+};
+
+vaycayMeals.SeaWorld = "Banna Nut Muffin";
+vaycayMeals["OliveGarden"] = "Chicken Pasta";
+
+// console.log(vaycayMeals);

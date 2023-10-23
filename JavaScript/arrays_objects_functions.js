@@ -24,12 +24,11 @@ let str = "Good evening";
 //     console.log(str[i])
 // }
 
+
 // "MerryChristmas".indexOf(r);//returns the first instance of "r"
 //str.charAt(3)// returns character at index of 3
 // str.lastIndexOf(e)// returns last instance of char "e"
 // console.log("Mery-Christmas-ya-filthy-animal".split("-"))// chops list into an array of substrings at each instance of '-'
-
-
 
 
 // D.R.Y. - Don't repeat yourself
@@ -50,7 +49,7 @@ let arr = ["Eat","Sleep","Code","Repeat"];
 function listArrayItems(){
     for(let i = 0; i < arr.length; i++){
         if(arr[i] == "Sleep"){
-            console.log(i, "Set alarm for 6:00am,", arr[i])
+            console.log(i + 1, "Set alarm for 6:00am,", arr[i])
         }else{
             console.log(i + 1, arr[i]); //displaying the array item where the index is equal to 'i'
         }
@@ -59,12 +58,13 @@ function listArrayItems(){
 // listArrayItems(arr);
 
 
+
 function letterFinder(word,match){
     for(let i = 0; i < word.length; i++){
         if(word[i] == match){
             console.log("Found the", match, "at", i);
         }else {
-            console.log("No match found at", i)
+            console.log("No match found at index of", i)
         }
     }
 }
