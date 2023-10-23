@@ -89,14 +89,17 @@ toyota4Runner.maintenance = maintenanceItems; // adding to object with dot notat
 toyota4Runner["Color"] = "Shadow-mica"; // adding to obj with braket notation. 
 toyota4Runner.todo = (checkLight) => {
     if(checkLight == true){
-        console.log("nedds maintenanceItems to be checked", maintenanceItems)
+        console.log("needs maintenance items to be checked", maintenanceItems)
     }else{
-        console.log("no maintenance required")
+       return;
     }
 };// function to check engineLight and perform maintenance if required
-toyota4Runner.engineLight = true;
+toyota4Runner.engineLight = true; 
 
-// console.log(toyota4Runner.todo(toyota4Runner.engineLight));
+toyota4Runner.todo(toyota4Runner.engineLight);
+
+
+
 
 
 

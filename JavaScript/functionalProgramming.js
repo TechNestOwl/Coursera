@@ -92,4 +92,15 @@ let vaycayMeals = {
 vaycayMeals.SeaWorld = "Banna Nut Muffin";
 vaycayMeals["OliveGarden"] = "Chicken Pasta";
 
-// console.log(vaycayMeals);
+function homeDinner(a){
+    if(a === "Night1"){
+        return "Frozen Pizza";
+    }else if(a === "Night2"){
+        return "Chicken Frito";
+    }else{
+        return a + " Wrong input received.";
+    };
+;}
+
+vaycayMeals.cookedMeals = homeDinner("Night2");
+console.log(vaycayMeals)
