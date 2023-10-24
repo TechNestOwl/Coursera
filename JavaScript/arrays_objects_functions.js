@@ -94,7 +94,7 @@ toyota4Runner.todo = (checkLight) => {
        return;
     }
 };// function to check engineLight and perform maintenance if required
-toyota4Runner.engineLight = true; 
+// toyota4Runner.engineLight = true; 
 
 toyota4Runner.todo(toyota4Runner.engineLight);
 
@@ -122,8 +122,8 @@ let goblinCharacter = {
     gold: 100
 }; 
 
-// // console.log("Hero -", mainCharacter);
-// // console.log("Hero's health:", mainCharacter.health);
+// console.log("Hero -", mainCharacter);
+// console.log("Hero's health:", mainCharacter.health);
 
 //using bracket notation to evaluate an expression
 let arrOfKeys = ["health","attack","defense","gold"];
@@ -131,12 +131,13 @@ let arrOfKeys = ["health","attack","defense","gold"];
 //     console.log(goblinCharacter[arrOfKeys[i]])
 // }
 
+
 let charactersHouse = {
     value: 15000,
     location: "City-center",
     material: ["wood","stone","brick"]
 }
-// console.log("Hero's house is made mostly of:",charactersHouse.material[1]);
+// console.log("Hero's house is made mostly of:", charactersHouse.material[1]);
 charactersHouse.windows = 4;
 // console.log(charactersHouse);
 
@@ -147,7 +148,7 @@ house2["value"] = 12000;
 house2["location"] = "country-side";
 house2["material"] = ["mud","sticks","straw"];
 
-// console.log(house2);
+// console.log("Second house is made mostly of:",house2.material[2]);
 
 //          ---Arrays are Objects---
 
@@ -173,7 +174,7 @@ function arrayBuilder(one,two,three){
     // console.log(arr);
     return(arr);
 }
-// arrayBuilder("Apple","Pear","Mango");
+arrayBuilder("Apple","Pear","Mango");
 
 let simpleArr = arrayBuilder("Dog","Cat","Hamster");
 // console.log(simpleArr);
@@ -246,7 +247,7 @@ car.lightsOn = ()=>{
 
 let test = typeof("string?");
 let test2 = typeof(3.14);
-// console.log(test2)
+// console.log(test2);
 
 //          ---Error handling----
 
@@ -268,10 +269,6 @@ let test2 = typeof(3.14);
 // }
 // console.log("program continues to run..")
 
-//annonymous function
-(y,z) => {
-    y + z
-};
 
 function addTwoNums(a,b) {
     try {
@@ -286,7 +283,7 @@ function addTwoNums(a,b) {
 let addTwoNumbz = (a,b) => {
     try{
         if(typeof(a) != "number"){
-           throw new ReferenceError("the first argument is not a number")
+            throw new ReferenceError("the first argument is not a number")
         }else if(typeof(b) != "number"){
             throw new ReferenceError("second argument is not a number")
         }else{
@@ -297,23 +294,29 @@ let addTwoNumbz = (a,b) => {
     }
 };
 
+
+
 // addTwoNumbz(2,"2");// concats the two arguments into a string if not for my try-catch block
 // console.log("Program continues running")
 
 //Note: Defensive programming is assuming all arguments a function will receive are of the wrong type,value, or both.
 
+//annonymous function
+// (y,z) => {
+//     y + z
+// };
 function letterFinder(word,match){
     //first, I'm checking that both arguments meet this criteria
     let condition1 = typeof(word) == "string" && word.length > 2;
     let condition2 = typeof(match) == "string" && match.length == 1;
 
-    if(condition1 == true && condition2 == true){//if the above criteria is met, run this block
+    if(condition1 == true && condition2 == true){//if the above two criteria is met, run this block
         for(let i = 0; i < word.length; i++){// loop through 'word' and check for instances of 'match'
             if(word[i] == match){
                 //if the current char at position i is equal to 'match'..
-                console.log("Found the", match,"at",i)
+                console.log("Found the", match,"at index of",i)
             }else{
-                console.log("No match found at", i)
+                console.log("No match found at index of", i)
             }
         }
     }else{
@@ -329,10 +332,10 @@ let dataVar = "test"
 
 function checkDataType(a){
     if(typeof(a) == "string"){
-        console.log(a, "is a string datatype")
+        console.log(a, "is a string data type")
     }else if(typeof(a) == "number"){
         console.log(a, "is a number dataType")
-    }else{console.log(a, "is neither")}
+    }else{console.log(a, "is neither string or number data type")}
 };
 // checkDataType(dataVar);
 

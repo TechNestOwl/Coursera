@@ -103,4 +103,8 @@ function homeDinner(a){
 ;}
 
 vaycayMeals.cookedMeals = homeDinner("Night2");
-console.log(vaycayMeals)
+// console.log(vaycayMeals)
+
+vaycayArr.pop()
+vaycayArr.push("Outlet Mall")
+// console.log(vaycayArr)
