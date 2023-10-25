@@ -16,4 +16,28 @@ dog.feed = (a) => {
     };
 };
 
-dog.feed(dog.hungry);
+// dog.feed(dog.hungry);
+
+
+//Function that calcualtes total cost of buying a pair of shoes (+tax)
+
+let shoePurchase = {
+    cost: 20,
+    tax: 1.06,
+    totalPrice: (a,b) => {
+        console.log(a * b)
+        // return a * b;
+    },
+};
+// shoePurchase.totalPrice(shoePurchase.cost,shoePurchase.tax); // passing the arguments this way seems cumbersome. Let's refactor.
+
+let shoePurchase2 = {
+    cost: 100,
+    tax: 1.06,
+    totalPrice: () => {
+        let calculation = shoePurchase2.cost * shoePurchase2.tax;
+        console.log("Total sale price is:", calculation)
+    }
+};
+
+shoePurchase2.totalPrice();
