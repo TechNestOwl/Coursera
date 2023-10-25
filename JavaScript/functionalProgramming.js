@@ -108,3 +108,7 @@ vaycayMeals.cookedMeals = homeDinner("Night2");
 vaycayArr.pop()
 vaycayArr.push("Outlet Mall")
 // console.log(vaycayArr)
+
+
+
+

@@ -24,7 +24,7 @@ dog.feed = (a) => {
 let shoePurchase = {
     cost: 20,
     tax: 1.06,
-    totalPrice: (a,b) => {
+    totalPrice: (a,b) => { // DO NOT use arrow functions as methods. !!!!
         console.log(a * b)
         // return a * b;
     },
@@ -34,10 +34,12 @@ let shoePurchase = {
 let shoePurchase2 = {
     cost: 100,
     tax: 1.06,
-    totalPrice: () => {
-        let calculation = shoePurchase2.cost * shoePurchase2.tax;
+    totalPrice: function(){
+        let calculation = this.cost * this.tax;
         console.log("Total sale price is:", calculation)
     }
 };
+shoePurchase2.totalPrice(); // accessing the totalPrice method using dot notation
 
-shoePurchase2.totalPrice();
+
+
