@@ -46,9 +46,97 @@ class landCruiser extends Toyota { /* ...class code here... */}
 
 //          *** Abstraction ***
 /*
-    
+    Often confused with Encapsulation because their differences can feel blury.
 
+    - Abstraction is about extracting the 'concept' of what you're trying to do,
+        rather than dealing wiht a specific manifestation of that concept.
+    - Encapsulation  is about not having access to, or not being concerned with how some
+     implementation works internally.
+
+    More research and expirence is required for me to understand more thouroghly. 
 */
+
+//          *** Polymorphisim ***
+/*
+    Greek for "multiple forms"
+
+    In code, a class can have a method that changes depending on the context.
+    ex: a ringBell() method can be different whether attached to a Bike object or FrontDoor Object
+*/
+
+let bicycle = {
+    bell: function(){
+        return ("Ding, ding, out of the way!");
+    }
+};
+
+let frontDoor = {
+    bell: function(){
+      return ("Ding, ding, come here please.");
+    }
+};
+
+// frontDoor.bell();// "...come here please"
+// bicycle.bell()// "...out of the way!"
+
+function ringTheBell(obj){
+    console.log(obj.bell())
+};
+// ringTheBell(bicycle);
+
+
+
+//another example of Polymorphisim - concat() method.
+"abc".concat("def"); // "abcdef"
+
+["abc"].concat["def"];// ["abc","def"]
+
+["abc"]+["def"]// ["abcdef"]
+
+//the concat() method is exhibiting polymorphisim based on the context. lines 90 and 92
+
+//my example of polymorphisim in classes:
+class Automobile{
+    reFuel(){
+        console.log("Engine needs fuel")
+    }
+};
+
+class SemiTruck extends Automobile {
+    reFuel(){
+        super.reFuel()
+        console.log("Diesel")
+    }
+};
+
+class EconomyCar extends Automobile{
+    reFuel(){
+        super.reFuel();
+        console.log("Regular Unleaded")
+    }
+};
+
+class ElectricVehicle extends Automobile{
+    reFuel(){
+        console.log("Plug into outlet for recharging")
+    }
+};
+
+let peterBuilt = new SemiTruck();
+let toyotaCarolla = new EconomyCar();
+let tesla = new ElectricVehicle();
+
+tesla.reFuel();
+peterBuilt.reFuel();
+toyotaCarolla.reFuel();
+
+/*
+    All three of the sub-classes extend from the super-class of Automobile.
+    Both the SemiTruck and EconomyCar inherit the reFuel() method.
+    The ElectricVehicle sub-class has it's own implementation of the reFuel() mehtod, though it
+    still extends from the Automobile class. 
+*/
+
 
 
 
@@ -97,7 +185,7 @@ let shoePurchase2 = {
         console.log("Total sale price is:", calculation)
     }
 };
-shoePurchase2.totalPrice(); // accessing the totalPrice method using dot notation
+// shoePurchase2.totalPrice(); // accessing the totalPrice method using dot notation
 
 
 //functional programming
@@ -109,6 +197,5 @@ function totalPrice(shoes, tax){
     return shoes * tax;
 };
 let toPay = totalPrice(shoes,stateTaxt);
-
 
 
