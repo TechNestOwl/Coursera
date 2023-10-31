@@ -4,12 +4,60 @@
     -Encapsulation
     -Abstraction
     -Polymorphisim
+
+
+    The thing to remember about Objects is that they exist in a hierarchal structure.
+     Meaning that the original base or super class for everything is the Object class,
+     all objects derive from this class. This allows us to utilize the Object.create() method. 
+    to create or instansiate objects of our classes.
+
+*/
+
+
+
+//          *** Inheritance ***
+/*
+    -Base class
+    -Sub-class
+    
+    There can be multiple sub-classes. The next up class in lexical scope is refered to as the "super-class".
+    Each sub-class inherits from it's super-class.
+*/
+class Car{ /* ...class code here... */}
+class Toyota extends Car { /* ...class code here... */}
+class landCruiser extends Toyota { /* ...class code here... */}
+
+//each subclass of car is inheriting from its super-class.
+
+
+
+//          *** Encapsulation ***
+
+/*
+    In simple terms, encapsulation has to do with making code implementation 'hidden' in the sense
+    that they don't have to worry about how the code works in order to use it. 
+
+    for example: 'abc'.toUpperCae();
+
+    Gennerally, I don't need to worry about how the underlying syntax of toUpperCase() works, so long as it does
+    not break my code. 
+*/
+
+
+//          *** Abstraction ***
+/*
+    
+
 */
 
 
 
 
-//Functions inside an object are refered to as METHODS
+
+
+
+
+
 
 let dog = {
     breed: "Border-collie",
