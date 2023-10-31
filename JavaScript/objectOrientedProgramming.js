@@ -1,3 +1,14 @@
+//The four fundamental OOP principles are: 
+/*
+    -Inheritance
+    -Encapsulation
+    -Abstraction
+    -Polymorphisim
+*/
+
+
+
+
 //Functions inside an object are refered to as METHODS
 
 let dog = {
@@ -17,7 +28,6 @@ dog.feed = (a) => {
 };
 
 // dog.feed(dog.hungry);
-
 
 //Function that calcualtes total cost of buying a pair of shoes (+tax)
 
@@ -40,6 +50,17 @@ let shoePurchase2 = {
     }
 };
 shoePurchase2.totalPrice(); // accessing the totalPrice method using dot notation
+
+
+//functional programming
+var shoes = 100; 
+
+let stateTaxt = 1.2;
+
+function totalPrice(shoes, tax){
+    return shoes * tax;
+};
+let toPay = totalPrice(shoes,stateTaxt);
 
 
 
