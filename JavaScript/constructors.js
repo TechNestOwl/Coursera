@@ -41,4 +41,21 @@ function IceCream(flavor){
 let chocoChip = new IceCream("chocolateChip");
 let sardineIceCream = new IceCream("Sardine");// Yum!
 // console.log(sardineIceCream);
+//Here I've built two instances of IceCream type
 
+
+
+let apple = new String("apple");
+apple; // ---> String("apple")
+
+let pear = "pear";
+pear; // ---> "pear"
+
+/*
+The pear variable is a string literal, that is, a primitive Javascript value.
+
+The pear variable, being a primitive value, will always be more performant than the apple variable, which is an object.
+
+Besides being more performant, due to the fact that each object in JavaScript is unique, you can't compare a String object with another String object,
+ even when their values are identical.
+*/
