@@ -54,3 +54,23 @@ train4.toggleLights();
 train4.getSelf();
 train4.getPrototype();
 
+class HighSpeedTrain extends Train {
+    constructor(passengers, highSpeedOn, color, lightOn){
+        super(color,lightOn); //inheriting from the super-class "Train"
+        this.passengers = passengers;
+        this.highSpeedOn = highSpeedOn;
+    }
+    toggleHighSpeed(){ // adding an additional method to the HighSpeedTrain
+        this.highSpeedOn = !this.highSpeedOn;
+        console.log("high speed status:", this.highSpeedOn);
+    }
+    toggleLights(){
+        super.toggleLights();
+        super.lightsStatus();
+        console.log("Lights are 100% operational.");
+    }
+};
+
+let train5 = new Train("blue", false);
+let highSpeed1 = new HighSpeedTrain(200,flase,"orange",flase);
+
