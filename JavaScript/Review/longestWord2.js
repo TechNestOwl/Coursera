@@ -1,14 +1,22 @@
 let names = [
     "Ant Man",
-    "Dog Man",
+    "Dog Man2",
     "Superman",
     "Storm",
-    "Frodo",
+    "Frodo Baggins",
     "Jake"
 ];
 
-//write a functio that that takes in an araray an returns the longest name.
+//write a function that that takes in an araray an returns the longest item in array.
 
-function longestName(arr){
-    
+function findLongestName(arr){
+
+    let longestName = "";
+
+    for(let i = 0; i < arr.length; i++){
+       if( arr[i].length > longestName.length){
+        longestName = arr[i]
+       }
+    }
+    return longestName;
 }
