@@ -12,3 +12,19 @@ function kmToMi(km){
 }
 
 console.log(kmToMi(100));
+
+
+function celciusToF(celcius){
+
+    let fahrenheit = 0;
+
+    let calculation = (celcius * 9/5) + 32;
+
+    fahrenheit = calculation;
+
+    console.log(fahrenheit);
+    return fahrenheit;
+
+};
+
+celciusToF(0);
