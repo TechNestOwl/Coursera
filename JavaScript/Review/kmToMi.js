@@ -10,8 +10,9 @@ function kmToMi(km){
 
     return conversionToMi
 }
-
 console.log(kmToMi(100));
+
+
 
 
 function celciusToF(celcius){
@@ -26,5 +27,4 @@ function celciusToF(celcius){
     return fahrenheit;
 
 };
-
 celciusToF(0);
