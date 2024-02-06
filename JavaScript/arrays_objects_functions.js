@@ -102,9 +102,6 @@ toyota4Runner.todo(toyota4Runner.engineLight);
 
 
 
-
-
-
 //          ---Dot Notatation, Object Literals, and Bracket Notation---
 
 //creating videogame characters with two different methods
@@ -298,7 +295,7 @@ let addTwoNumbz = (a,b) => {
 
 // addTwoNumbz(2,"2");// concats the two arguments into a string if not for my try-catch block
 // console.log("Program continues running")
-
+subwoofer
 //Note: Defensive programming is assuming all arguments a function will receive are of the wrong type,value, or both.
 
 //annonymous function

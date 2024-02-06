@@ -147,6 +147,8 @@ class NoDefaultParams {
 let fail = new NoDefaultParams(1,2,3,false);
 fail.calculate(); // the value of bool1 is incorrect
 
+
+//Now here is with default Params...
 class WithDefaultParams {
     constructor(num1 = 1, num2 = 2, num3 = 3, string1 = "Result:", bool1=true){
         this.num1 = num1;
