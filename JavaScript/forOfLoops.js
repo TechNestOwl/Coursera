@@ -63,7 +63,7 @@ sportyLexus.speed = "fast";
 // console.log(sportyLexus);
 
 for(prop in sportyLexus){
-    console.log(prop)
+    console.log(prop + sportyLexus[prop])
 };// this is also looping over sportyLexus's prototype ("lexus"), not what I want
 
 
@@ -72,3 +72,44 @@ for(prop of Object.keys(sportyLexus)){
     console.log(prop + ":" + sportyLexus[prop])
 }
 
+
+
+
+
+
+
+
+var dairy = ['cheese', 'sour cream', 'milk', 'yogurt', 'ice cream', 'milkshake']
+
+function logDairy() {
+    for (var dairies of dairy) {
+    console.log(dairies)
+    }
+}
+logDairy();
+
+const animal = {
+
+canJump: true
+
+};
+
+const bird = Object.create(animal);
+
+bird.canFly = true;
+
+bird.hasFeathers = true;
+
+function birdCan() {
+    for (let attributes of Object.keys(bird)) {
+        console.log(attributes + ': ' + bird[attributes]);
+    }
+}
+birdCan();
+
+function animalCan() {
+    for (prop in bird) {
+        console.log(prop + ': ' + bird[prop]);
+    }
+}
+animalCan();
