@@ -13,14 +13,14 @@
 
 
  */
-// Two essential keywords: extends & super
-
 
 class Animal{
-    constructor(color,size,hungry){
+    constructor(color,size,hungry,energy){
         this.color = color;
         this.size = size;
         this.hungry = hungry;
+        this.energy = energy;
+
     }
     feedingTime(){
         if(this.hungry){
@@ -36,22 +36,37 @@ class Animal{
         }console.log("Animal is no longer hungry.")
 
     }
+    isActive(){
+        if(this.energy > 0){
+            this.energy --;
+            console.log(`Exertion has lowered energy to ${this.energy}`)
+            return;
+        }else if(this.energy == 0){
+            console.log("Animal has succumbed to exhaustion.")
+        };
+    }
+    sleep(){
+        this.energy ++;
+        console.log("Animal wakes with renewed energy");
+    }
+    getColor(){
+        console.log(this.color);
+    }
 };
 
 class Cat extends Animal {
-    constructor(color, size,hungry, habitat){
-        super(color, size, hungry);
+    constructor(color,size,hungry,habitat,energy){
+        super(color, size, hungry, energy);
         this.habitat = habitat;
     }
-    feedingTime(){
-        super.feedingTime();
-        console.log("Garfield is always hungry")
+    locateHome(){
+        console.log(this.habitat);
     }
 };
 
 class Bird extends Animal {
-    constructor(color, size, hungry, canSpeak){
-        super(color, size, hungry);
+    constructor(color, size, hungry,canSpeak,energy){
+        super(color, size, hungry,energy);
         this.canSpeak = canSpeak;
     }
     pollyWantCracker(){
@@ -62,6 +77,38 @@ class Bird extends Animal {
     }
 };
 
+class HouseCat extends Cat{
+    constructor(color, size, hungry, habitat = "Can't find him",energy){// setting default value for habitat
+        super(color, size, hungry, habitat);
+    }
+    feedAnimal(){
+        super.feedAnimal();
+        console.log("Garfield is always hugry...");
+    }
+};
+
+class Parrot extends Bird{
+    constructor(color, size, hungry,energy, canSpeak = true){
+        super(color, size, hungry, canSpeak, energy);
+    }
+    pollyWantCracker(){
+        super.pollyWantCracker();
+        console.log("Parrot's always 'speak'");
+    }
+};
+class Tiger extends Cat {
+    constructor(color,size,hungry,habitat, energy){
+        super(color, size, hungry, habitat, energy);
+    }
+
+};
+
 let elephant = new Animal("grey","huge",true);
-let garfield = new Cat("tabby", "small", true, "Suburban");
-let macaw = new Bird("green","xSmall",true,false);
+let garfield = new HouseCat("tabby", "small", true);// I did not pass garfield a location param, the default value will be used.
+let kittyKat = new Cat("black","small",false, "Anywhere")
+let robin = new Bird("red","xSmall",true,false);
+let macaw = new Parrot("green","medium",false);// canSpeak has defaulted to true
+let tony = new Tiger("Stripped", "large", true, "Siberia", 10)
+
+
+
