@@ -46,6 +46,7 @@ const [] = fruits;
 
 // specifying what I want to get out of the array, in this case the first 3 items
 const [first,second,third,...otherFruits] = fruits; 
+// console.log(first); // output is "apple" the first item from fruits array
 // creating 4 variables, 
 // first 3 items I want
 // and the 4th variable which will hold the remainder of the items from fruits. 
@@ -62,6 +63,84 @@ function addTaxToPrices(taxRate, ...itemsBought){ // the rest operator is giving
 };
 //important note: the rest operator must be the last param in the function definition
 
-let shoppingCart = addTaxToPrices(tax, 80,200,100);
+let shoppingCart = addTaxToPrices(1.06, 80,200,100);
 
-console.log(shoppingCart)
+console.log(shoppingCart);
+
+
+
+
+
+
+//Concatenateing arrays:
+
+const animals = ['bird','cat','dog','mouse'];
+const berries = ['blueberry','strawberry','blackberry'];
+
+const animalsAndBerries = [...animals, ...berries];
+
+console.log(animalsAndBerries); // outputs a single array with constituients from both arrays.
+
+
+
+// Concatenateing objets:
+
+const flying = {
+    wings: 2,
+    altitude: 100,
+};
+const car = {
+    wheels: 4,
+    engine: true,
+};
+const flyingCar = {...flying, ...car};
+console.log(flyingCar); // outputs { wings: 2, altitude: 100, wheels: 4, engine: true }
+
+
+
+
+
+// Adding new elements to an array without using .push() | .pop()
+
+let veggies = ["carrot","onion","parsley"];
+veggies = [...veggies, "garlic","celery"];
+
+// console.log(veggies); // output will be veggies array with new elements. 
+
+
+
+
+
+
+// Converting string into an array uisng spread operator 
+
+const message = "Hello world";
+const arrayOfChar = [...message];
+
+// console.log(arrayOfChar); // output is each individual char in an array called arrayOfChar
+
+
+
+
+
+// copy either an object or an array into a seperate one
+
+const car1 = {
+    speed: 200,
+    color: "blue"
+};
+
+const car2 = {...car1};
+
+car1.speed = 120;
+
+// console.log(car1, car2);
+
+
+const fruits1 = ["apples","oranges"]
+
+const fruits2 = [...fruits1]
+
+fruits1.pop();// remove last item from fruits1 array
+
+console.log(fruits1, "not",fruits2)
