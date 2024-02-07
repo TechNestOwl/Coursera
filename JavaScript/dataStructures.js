@@ -69,4 +69,58 @@ nums.map((num) => num / 2 ); // returns array with each element from nums divide
  */
 
 
-    
+
+
+// Converting Object into Array
+
+let result = [];
+
+const car = {
+    speed: 20,
+    color: "mustard",
+    topSpeed: 120,
+};
+
+const carKeys = Object.keys(car); // creating an itterable array of keys of car object
+// console.log(carKeys)
+
+carKeys.forEach((key) => {
+    result.push(`${key} : ${car[key]}`) // for each key of carKeys, push this into result array
+});
+
+// console.log(result)
+
+
+
+// Working with Maps 
+// unlike Objects, Maps do not have inheritance, so no prototypes!,
+// this makes it usefull as a data storage
+
+// making a new Map with the map constructor - new Map()
+let italianFood = new Map();
+
+italianFood.set(1,"Spaghetti");
+italianFood.set(2,"pizza")
+italianFood.set(3,"tostinos")
+italianFood.set(4,"lasagna")
+
+console.log(italianFood);
+
+// to get a specific value use the .get() methdod
+
+let authentic = italianFood.get(3);
+
+// console.log(authentic)
+
+
+
+// Working with Sets
+
+// a Set is a collection of unique values. Use constructor - new Set();
+// the set constructor can accept an array for example.. here I am using it 
+// 'filter' an array for unique items
+
+let repetitiveFruits = ["apple", "mango",'apple','orange','apple','pineapple']
+
+let uniqueFruits = new Set(repetitiveFruits) // returns only unique items from repetitiveFruits array
+// console.log(uniqueFruits)
