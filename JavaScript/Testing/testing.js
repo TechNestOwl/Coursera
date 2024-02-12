@@ -1,11 +1,38 @@
 
 //          Testing
 
+
+/*
+    After stand up meeting, I have my requirements from my project manager:
+        - Read my new requiremetn
+        - I write a failing test
+        - I udate my source code so it resolves the requirement
+        - Run a test that passes
+        - Finally, I refactor my implementation
+
+        Red, Green, Refactor
+
+
+    Advantages to Test Driven Development
+
+    - Minimize regressions (accidental bugs introduced to old code by codeing a new requirement)
+    - Proves new implementation is working and not breaking other parts of the app
+    - These tests can be automated, and thus keep verifiying again again
+    - I can test my implementation with various inputs
+    - The tests become specific kind of documentation for the new memnbers of my team
+
+*/
+
+
+
+
+
+
 function concatStr(str1, str2){
     return str1 + str2;
 };
 
-// expect(concatStr("abc","def")).toBe("abcdef");
+expect(concatStr("abc","def")).toBe("abcdef");
 //  here I am passing my function to expect()
 // then I add the toBe() function which gets passed the value of what I'm expecting the code to produce.
 
@@ -111,6 +138,14 @@ function concatStr(str1, str2){
             - easy to write
 
     Together, these can be represented as a three-level testing pyramid
+
+
+    
+
+
+
+
+
 
 */
 

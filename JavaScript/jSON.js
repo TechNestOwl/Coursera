@@ -10,7 +10,7 @@
 
  */
 
-
+ 
 let jsonStr = '{"greeting":"Hello"}'
 
 let plainObj = JSON.parse(jsonStr);
