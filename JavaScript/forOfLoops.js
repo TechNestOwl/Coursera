@@ -58,6 +58,8 @@ const lexus = {
 
 const sportyLexus = Object.create(lexus);
 
+// const sportyLexus2 = {...lexus};
+
 sportyLexus.speed = "fast";
 
 // console.log(sportyLexus);
