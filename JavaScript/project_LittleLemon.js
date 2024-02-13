@@ -46,31 +46,35 @@ function calculateMenuTax(menu){
     console.log("Prices with 20% tax:")
 
     for(let dish = 0; dish < menu.length; dish++){
-            let item = dishData[dish];
+            item = menu[dish];
         
             item.price = item.price * tax;
+
 
             let food = item.name;
             let price = item.price;
 
-            console.log(`Dish : ${food}(incl.tax) : $${price}`);
+            console.log(`Dish : ${food} Price(incl.tax) : $${price}`);
+
 
             };
     };
     
 function displayTaxFree(menu){
 
+    // this function outputs the message in a an array of strings
+
     let output = [];
 
     console.log("Prices with tax free coupon:")
 
     for(let index = 0; index < menu.length; index++){
-        let item = dishData[index];
+        let item = menu[index];
 
         let food = item.name;
         let price = item.price;
 
-        let message = `Dish : ${food} : $${price}`;
+        let message = `Dish : ${food} Price : $${price}`;
 
         output.push(message)
 
@@ -92,4 +96,4 @@ function hasCoupon(bool){
 };
 
 
-hasCoupon(true);
+hasCoupon(false);
