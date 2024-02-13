@@ -41,9 +41,10 @@ const tax = 1.20;
 function calculateMenuTax(menu){
 
     const tax = 1.2;
+    // let message = ``;
 
     console.log("Prices with 20% tax:")
-    
+
     for(let dish = 0; dish < menu.length; dish++){
             let item = dishData[dish];
         
@@ -55,18 +56,40 @@ function calculateMenuTax(menu){
             console.log(`Dish : ${food}(incl.tax) : $${price}`);
 
             };
-
     };
     
-calculateMenuTax(dishData);
-    
+function displayTaxFree(menu){
+
+    let output = [];
+
+    console.log("Prices with tax free coupon:")
+
+    for(let index = 0; index < menu.length; index++){
+        let item = dishData[index];
+
+        let food = item.name;
+        let price = item.price;
+
+        let message = `Dish : ${food} : $${price}`;
+
+        output.push(message)
+
+    }
+
+    console.log(output)
+
+}    
 
 
 
-function displayMenu(bool){
-    if(bool == false){
-        console.log(discountedFood)
+function hasCoupon(bool){
+    if(bool == true){
+        // console.log(discountedFood)
+        displayTaxFree(dishData)
     }else{
-        console.log(taxedFood)
-    }l
+        calculateMenuTax(dishData)
+    }
 };
+
+
+hasCoupon(true);
