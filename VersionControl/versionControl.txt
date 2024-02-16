@@ -64,3 +64,26 @@ Distributed Version Control Sys ( DVCS ):
         - speed and performance are also better that CVCS.
     
 
+
+
+Staging vs. Production
+
+Staging
+    The staging environment should mimic your production environment. 
+    The reason for this is because you want to test the code in an environment
+    that matches what you have in production. This allows teams to spot or find 
+    any potential issues prior to them getting to production.
+
+    - new features
+    - testing
+    - migrations
+    - configuration changes
+
+Production
+    Production is live. It's out there for people to see and/or interact with.
+    Any issues or problems you may have had should have been caught and fixed 
+    in the staging environment
+    
+    - Downtime: for any sevice especiialy customer facing, will most likely be revenue impacting. 
+    - Vulernerabilities
+    - Reputation
