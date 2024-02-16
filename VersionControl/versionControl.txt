@@ -24,3 +24,43 @@ Benefits of version control:
             - testing / automation
             - deployment
             
+
+
+
+Version Control systems can be split into two types/catagories:
+
+Centerilized Version Control Sys( CVCS ):
+    - contain a server and a client
+    - server contains the main repo that houses the full history of code base
+    - devs working in CVCS need to pull down code from the server to their local machine 
+        this gives the user their own working copy of the code base. The serve holds the
+        full history of changes.  The client has the latest code, but every opertion needs 
+        to have a connection to the server itself. 
+    - the server is the centeral copy of the project.
+    - afeter makin changes, the dev needs to push the changes to the central server so that other
+        devs can see them. 
+        This essentially means that viewing the history of changes requires that you are connected
+        to the server in order to retrrieve and view them. 
+
+    ADVANTAGES:
+        - easier to learn
+        - more access controls to users
+
+    DISADVANTAGES: 
+        - slower ( an established connection to the server is required to preform actions )
+        
+
+Distributed Version Control Sys ( DVCS ):
+
+    - you still need to pull code down from the server to view the latest changes.
+    - the key difference is that every user is essentially a server and not a client. 
+    - meaning that every time you pull down code from the distributed model, you have the entire
+        history of changes on your local system. 
+
+    ADVANTAGES: 
+        - a connection to the server is not required to add changes or view a files history.
+        - works as if you're connected to the server directly, on your local machine
+        - you only ever need to connect to the server repo in order to pull or push your the latest changes.
+        - speed and performance are also better that CVCS.
+    
+
