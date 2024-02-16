@@ -22,8 +22,6 @@ for(let car of makes){
 };// logs each element(car) in the array of cars
 
 
-
-
 //  Built-in Methods
 
 console.log(Object.keys(car)); // returns an array of strings of the objects keys
@@ -33,6 +31,7 @@ console.log(Object.values(car)); // similar to above, BUT returns values instead
 console.log(Object.entries(car)); 
 // returns array of arrays containg string values in pairs of ['key','value'] of the passed in object
 //[ [ 'color', 'blue' ], [ 'engineSize', 'V6' ], [ 'topSpeed', 200 ] ]
+
 
 
 let dogBreed = {
@@ -51,10 +50,6 @@ const lexus = {
     steering: true,
     speed: "slow",
 };
-
-
-
-
 
 const sportyLexus = Object.create(lexus);
 

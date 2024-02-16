@@ -60,4 +60,6 @@ function getDiscount(taxBoolean, guests) {
 
 getDiscount(false, 23);
 
+var result;
 
+console.log(result)

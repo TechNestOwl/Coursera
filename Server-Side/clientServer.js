@@ -11,8 +11,11 @@
 
         - PUT update an existing resource( or create a new one if it doesnt exist)
 
+        - POST requests creates new resources, the data of which is encoded withing the request body.
+            A POST is made when you submit a form containing information to be saved on the server. 
+
         - DELETE delete a specified resource
 
         - TRACE, OPTIONS, CONNECT, PATCH  these are far less common/advanced, further research is needed.
-        
+
 */
