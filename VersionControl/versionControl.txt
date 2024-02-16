@@ -1,0 +1,26 @@
+Benefits of version control:
+
+- Revision History
+        * provides the ability to revert to a stable instance of the codebase.
+
+        * rolling back allows my team to move faster and work with confidence
+- Identity
+        * all changes are made with the identity of user who pushed the code / revisions 
+
+- Collaboration
+        * peer review allows teams to inspect and review the changes and so provide neccesary feedback when needed
+
+- Automation
+        * the ability to create and deliver code in a wide scale is complex and time consuming.
+        Tracking changes plays a key role in the explosion of development operations. 
+        Providing aid in software quality and in release/deployments
+
+- Efficiency
+        * working with the processes of agile methodologies, my team and I plan and execute tasks accordingly. 
+            - planning
+            - requirement analysis
+            - design
+            - development
+            - testing / automation
+            - deployment
+            
