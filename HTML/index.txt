@@ -38,7 +38,8 @@ Note: section elements should contain a heading tag to semantically define those
 
 
 
-Inline tags
+        ** Inline tags **
+
 <a>
 An anchor link to another HTML document.
 
@@ -102,7 +103,8 @@ Displays the containing text with a solid underline.
 <var>
 The containing text is a variable in a mathematical expression.
 
-Embedded content and media tags
+        ** Embedded content and media tags**
+        
 <audio>
 Used to embed audio in web pages.
 
@@ -133,7 +135,9 @@ Specifies media resources for <picture>, <audio> and<video> elements.
 <svg>
 Used to define Scalable Vector Graphics within a web page.
 
-Table tags
+        ** Table tags **
+
+        
 <table>
 Defines a table element to display table data within a web page.
 
