@@ -40,14 +40,24 @@
             type="range" 
             id="booking_people" 
             name="booking_people" 
-            min="1" max="10"
-            vallue="4"
-            oninput="this.nextElementSiblling.value = this.value" 
-            >  <!-- oninput will update the output element with the value of the input slider when it changes. -->
+            min="1" 
+            max="10"
+            value="4"
+            oninput="this.nextElementSibling.value=this.value"> 
             <output for="booking_people">4</output>
+             <!-- oninput will update the output element with the value of the input slider when it changes. -->
         </div>
         <div>
-            
+            <!-- datalist input type allows me to specifiy a list of available options
+             that will apear in a dropdown list. The field allows user to narrow results based on input.   -->
+            <label for="booking_location">Location</label>
+            <input id="booking_location" name="booking_location" list="locations">
+            <datalist id="locations">
+                <option value="Downtown"></option>
+                <option value="Midtwon"></option>
+            </datalist>
+
+
         </div>
         <button type="submit">Book table</button>
     </form>
