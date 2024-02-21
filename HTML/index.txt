@@ -15,6 +15,83 @@ In this sectin, I will cover:
 
 
 
+
+
+Open Graph Protocol: 
+https://www.freecodecamp.org/news/what-is-open-graph-and-how-can-i-use-it-for-my-website/
+https://ogp.me/
+https://developers.facebook.com/docs/sharing/webmasters/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Semantics Tags:
 
 Article Element - indicates content which represents a complete or self-contained composition
@@ -213,7 +290,7 @@ Defines a semantic column in a table.
 
         ** Responsive design/mobile meta tags **
 
-        
+
 <meta name="format-detection" content="telephone=yes"/> indicates that telephone numbers should appear as hypertext links that can be clicked to make a phone call 
 
 <meta name="HandheldFriendly" content="true"/> specifies that the page can be properly visualized on mobile devices 
