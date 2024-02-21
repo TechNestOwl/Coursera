@@ -30,15 +30,25 @@
     <main>
     <form method='POST'>
         <h1>Book a table</h1>
-        <fieldset id="size">
-            <input type="radio" name="size" value="2"> 2 Person Table
-            <input type="radio" name="size" value="4" checked> 4 Person Table
-            <input type="radio" name="size" value="6"> 6 Person Table
-        </fieldset>
-        <fieldset id="location">
-            <input type="radio" value="indoors" name="location" checked> Indoor Seating
-            <input type="radio" value="outdoors" name="location"> Outdoor Seating
-        </fieldset>
+        <div>
+            <label for="booking_date">Booking Date</label>
+            <input type="date" id="booking_date" name="booking_date">
+        </div>
+        <div>
+            <label for="booking_people">Number of People</label>
+            <input 
+            type="range" 
+            id="booking_people" 
+            name="booking_people" 
+            min="1" max="10"
+            vallue="4"
+            oninput="this.nextElementSiblling.value = this.value" 
+            >  <!-- oninput will update the output element with the value of the input slider when it changes. -->
+            <output for="booking_people">4</output>
+        </div>
+        <div>
+            
+        </div>
         <button type="submit">Book table</button>
     </form>
     </main>
