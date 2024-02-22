@@ -17,7 +17,7 @@ In this sectin, I will cover:
 
 
 
-Open Graph Protocol: 
+        ** Open Graph Protocol: 
 https://www.freecodecamp.org/news/what-is-open-graph-and-how-can-i-use-it-for-my-website/
 https://ogp.me/
 https://developers.facebook.com/docs/sharing/webmasters/
@@ -25,8 +25,21 @@ https://developers.facebook.com/docs/sharing/webmasters/
 
 
 
+        ** Form Action and Method:
 
+It is important to note that action can be a full URL address such as https://meta.com,
+ an absolute path such as /login, or a relative path such as login. 
 
+The absolute path, which starts with a forward slash, will use the base address of the
+ current website, such as https://meta.com and combine it with the absolute path. 
+ For example, if /login is the absolute path, the form will be submitted to
+  https://meta.com/login. If the address is https://meta.com/company-info/ and /login 
+  is the absolute path, the submission address will still be https://meta.com/login.
+
+Similarly, a relative path will combine the current web address with a relative path.
+ For example, if the web browser is currently on the web page 
+ https://meta.com/company-info/, and the relative path is set to login, the form will 
+ be submitted to https://meta.com/company-info/login. 
 
 
 
