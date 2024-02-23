@@ -1,0 +1,31 @@
+        Undeerstanding Flexbox
+
+Much like the div and box container that you can create using HTML, flexbox is a type of container. 
+Flexbox can overcome the limitations caused by containers such as block and inline because it does 
+a better job of scaling over larger web pages and also provides more dynamic control of the containers. 
+This is because it can grow, shrink and align the items inside it which give better control to the programmer
+ over the contents and styling of the items inside the container. 
+
+Flexbox is single-dimensional, which means you can align it either along a row or a column and it is set to row 
+alignment by default. There are two axes, the main and cross-axis, much like the x and y-axis used in coordinate 
+geometry. When aligned along the row, the horizontal axis is called the main axis and the vertical axis is called 
+the cross axis. For the items present inside the flexbox container, the placement starts from the top-left corner
+ moving along the main or horizontal axis. When the row is filled, the items continue to the next row. Note that 
+ with the help of a property called flex-direction, you can instead flip the main axis to run vertically and the
+  cross axis will then be horizontal. In such a case, the items will start from top left and move down along the 
+  vertical main axis. The properties you choose will help better control alignment, spacing, direction and eventually
+   styling of the container and items present inside it. 
+
+
+
+
+        Alignment Properties
+
+justify-content. For item alignment on main axis.
+
+align-items. For item alignment on cross axis.
+
+align-self. For unique flex items on cross axis.
+
+align-content. Used for packing flex lines and control over space.
+
