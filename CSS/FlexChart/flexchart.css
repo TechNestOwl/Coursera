@@ -31,3 +31,31 @@
 .burrito{
     background-color: grey;
 }
+
+
+
+
+/* Bar Chart */
+
+.columns{
+    display:flex;
+    height: 400px;
+    max-width: 300px;
+    align-items: stretch;
+    border: 1px solid black;
+}
+
+.container2{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+.bar{
+    border-right: 1px solid white;
+}
+
+.female{background-color: pink;}
+.male{background-color: blue;}
