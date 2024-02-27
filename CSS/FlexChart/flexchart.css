@@ -31,6 +31,7 @@ footer{
     place-items: center;
     text-align: center;
     grid-template-rows: 100%;
+    height: 80px;
 }
 
 .twelve {
