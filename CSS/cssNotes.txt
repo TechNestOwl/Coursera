@@ -36,7 +36,7 @@ This property is used to set the main axis, which is a ‘row’ by default.
 
 
 
-Other CSS selectors
+        Other CSS selectors
 
 - Attribute selectors
         target specific attributs in the dom. 
@@ -53,3 +53,25 @@ Other CSS selectors
 - Group selectors / slector stacking
         precisely as described... groups selectors together
 
+
+
+
+        Specificity Hierarchy
+
+CSS has a set of rules that it uses to 'score' or assign a certain weight to selectors ad this creates a Specificity
+hiearchy. based on the wights, there are four categories in this Hierarchy. 
+
+- inline styles: 
+        highest Specificity, inlye styles <style></styles> will be applied irrespective of other rules.
+
+- IDs
+        next in the hiearchy, id's are represented by # 
+
+- Classes, attributes, and psedo-Classes
+        next in the hiearchy. 
+        ex:     .my-class 
+                p['attribute']
+                div:hover
+
+- elemenmts and pseudo-elements
+        lowest position in Hierarchy. 
