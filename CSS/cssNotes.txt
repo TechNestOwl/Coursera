@@ -29,3 +29,12 @@ align-self. For unique flex items on cross axis.
 
 align-content. Used for packing flex lines and control over space.
 
+
+    ** flex-direction: 
+This property is used to set the main axis, which is a ‘row’ by default.
+ It basically means you are changing your ‘main’ axis from horizontal rows to vertical columns. 
+
+
+
+        CSS units of measurement
+
