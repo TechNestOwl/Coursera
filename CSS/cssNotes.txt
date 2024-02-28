@@ -36,5 +36,20 @@ This property is used to set the main axis, which is a ‘row’ by default.
 
 
 
-        CSS units of measurement
+Other CSS selectors
+
+- Attribute selectors
+        target specific attributs in the dom. 
+        ex1: a[href="https://google.com]   -> will target all a tags with this this specific attribute
+        ex2: a["href$=.org"]    -> all elements with href ending in '.org'
+
+- :nth-of-type()|| :nyth-of-child() selectors
+        matches elements based on position among siblings and type(tag name)
+
+
+- Star selectoreet 
+        * selects 'all' elements
+
+- Group selectors / slector stacking
+        precisely as described... groups selectors together
 
