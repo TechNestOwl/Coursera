@@ -75,3 +75,43 @@ hiearchy. based on the wights, there are four categories in this Hierarchy.
 
 - elemenmts and pseudo-elements
         lowest position in Hierarchy. 
+
+
+
+        Pseudo-classes 
+
+State based selectors. Meaning they allow you to select elements based on their state. Ex: hoverState.
+
+Syntax: 
+        selector::pseudo-class{
+                property: value;
+        }
+
+        .myButton::active {
+                background-color: green;
+                transform: scale(1.2);
+        }
+
+User Action States: 
+        :hover
+        :active
+        :focus
+These pseudo classes have an effect while the user is actively engaging with an element. 
+
+Form States:
+        : diabled and : enabled
+        : checked and : indeterminate
+        : valid and : invalid
+
+Specific position-based states:
+        : first-of-type
+        : last-of-type
+        : nth-of-type
+        : nth-last-of-type
+
+Note: when using multiple pseudo classes, the order in which you apply pseudo classes determins the applied style. Follow the order of 'LVHA'
+LVHA:
+        -link
+        -visited
+        -hover
+        -active
