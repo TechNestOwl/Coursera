@@ -115,3 +115,17 @@ LVHA:
         -visited
         -hover
         -active
+
+
+
+Text Effects:
+
+The effects developers use on text items on a web page are chosen
+mainly because of their styling and layout style. Interesting effects
+ can be created by combining these with other CSS properties. 
+
+The visual representation of text content can be changed by four main 
+properties: text-transform, font-style, font-weight and text-decoration.
+
+Transform and transitions:
+

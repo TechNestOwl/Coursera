@@ -1,0 +1,18 @@
+.box{
+    display: grid;
+    width: 240px;
+    height: 240px;
+    margin: 100px;
+    background-color: green;
+    border-radius: 12px;
+    border: solid blue;
+}
+
+.box :hover {
+    transform: rotateZ(70deg);
+    background-color: purple;
+    opacity: 50%;
+    transition: 2s;
+}
+
+/* Applying this transition effect to my 'box' class div element. */
