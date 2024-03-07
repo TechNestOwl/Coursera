@@ -41,6 +41,7 @@
 }
 
 
+/* Applying this transition effect to my 'box' class div element. */
 
 .box{
     display: grid;
@@ -59,4 +60,18 @@
     transition: 2s;
 }
 
-/* Applying this transition effect to my 'box' class div element. */
+
+
+/*  @keyframe rule
+
+syntax: 
+    @keyframes animationName {keyframes-selector {css-style;}}
+
+    @keyframes animationName {
+        from {color:blue;}
+        to {color: red;}
+    }
+
+
+
+*/

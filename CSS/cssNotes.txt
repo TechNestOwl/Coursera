@@ -127,5 +127,30 @@ mainly because of their styling and layout style. Interesting effects
 The visual representation of text content can be changed by four main 
 properties: text-transform, font-style, font-weight and text-decoration.
 
-Transform and transitions:
 
+
+
+Transform and transitions
+
+Keyframes:
+Keyframes are a type of at-rule which are represented by the '@' suffix. At-rules are statements inside CSS that
+describe how to behave or perform certain actions. In line with that, keyframes are defined as '@keyframes' in the CSS code.
+@keyframes are part of the animation sequence and help in defining the steps inside it.
+
+@keyframes animation-name { 
+
+from { 
+
+property-a: value-a; 
+
+} 
+
+ 
+
+to { 
+
+property-a: value-b; 
+
+} 
+
+} 
