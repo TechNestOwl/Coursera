@@ -179,3 +179,82 @@ The 'from' and 'to' keywords are used inside the @keyframes rule to mark the tra
 
 100% {transform: rotate(50deg);} 
  }
+
+
+
+
+
+
+Preprocessors: sass, scss, Stylus:
+
+CSS preprocesses are special compilers used to create a CSS file that can be referenced by an HTML document. They are 
+generally used to reduce the amount of CSS you need to write and allow you to re-use values across multiple rules. This
+ will make re-using animations and effects much easier. And because preprocessors are an extension of CSS they'll help
+  not just in animation but any CSS code. Let's learn a little more about them.
+
+Preprocessors provide audit functionality on top of the CSS features already present. Some of the features of preprocessors 
+include the option to create variables, loops, and if else statements. Different preprocessors each have their own syntax 
+and configurations for adding these features. Some of the most commonly used preprocessors include Sass, LESS, Stylus and 
+PostCSS. The use of these preprocessors requires the installation of a compiler on top of your web server. 
+
+In the early days of CSS, the main problem developers faced was the difficulty of managing the code. The way CSS was 
+designed made the code very long, messy and complex. It also made it difficult to troubleshoot. Preprocessors have their 
+own scripting language that adds logical structures, automation properties, reusability and bloating of the code. You’ll
+ now explore some of the different preprocessors available.
+
+ SASS and SCSS 
+ Syntactically Awesome Style Sheets (SASS) is a scripting language that CSS compiles and interprets into CSS. SCSS,
+  which stands for Sassy CSS is the syntax for SASS and can be seen as an advanced version of both SASS and CSS. The
+   difference between SASS and SCSS is best explained by the SASS documentation, which states:
+
+"There are two syntaxes available for Sass. The first, known as SCSS (Sassy CSS) and used throughout this reference, 
+is an extension of the syntax of CSS. This means that every valid CSS stylesheet is a valid SCSS file with the same meaning.
+ Files using this syntax have the .scss extension.
+
+
+
+
+
+
+
+
+
+        ** Debugging CSS **
+
+The first step in debugging CSS is to find the root of the issue and isolate the elements involved. 
+The majority of CSS issues will be with the layout, such as: 
+        - Content Overflow
+        - Misplaced elements in relaton to container
+        - Browser and device-related inconsistencies resulting in variable viewports
+
+
+        Isolation by reduced test case  
+One way to deal with a problem is to replicate your code and systematically remove any code unrelated to the 
+HTML and CSS elements that could be the source of the problem. The code should be distilled down to the least amount of 
+code possible, and only then are suitable changes made to get the results you want. Alternatively, you can enable rules
+ one at a time to observe their impact on the displayed elements.  
+
+        Items inside containers  
+Often, isolation will not work, as the problem is the result of the relative mapping of elements. For example, with the 
+misconfigured width of an item inside a flex layout. It’s important to check the use of suitable CSS properties in such cases.
+For a given item inside a grid, depending on the use case, width, grid-template-column, margin and padding can all be used
+to give spacing to an element. Additionally, you can also set different units that will all have their own behavior.
+In most cases, it helps to be familiar with the unit of measurement in relation to the container type to avoid 
+misconfigurations.  
+
+        Relocating items  
+Similar to the isolation of elements, you can move a certain element to observe its behavior.
+ Doing a comparison can often help you to understand the source of the problem.   
+
+The CSS compiler reads the elements from right to left. As an example, for a selector such as
+ div .alpha > p, the element read first will be p before moving ‘outside’. When you change the position of the p 
+ from inside the .alpha class to some other position inside your code, it is easier to debug the source of the problem.
+  This should be done on a case-specific basis.          
+
+        Dev tools  
+There are lots of user-friendly tools available today that can help debug CSS. However, the best tool you can use is the 
+one provided by the browsers, called the developer tools, or dev tools. You can find these by right-clicking on a web page
+ and selecting ‘Inspect Element’. option Note how every browser has its own expression when it comes to the configuration
+  options, but fundamentally they are similar. Browsers today are very powerful pieces of software. If you spend time
+   exploring the options, you may not need any other additional tools or software for debugging CSS and other front-end 
+   languages.     

@@ -55,7 +55,7 @@
 
 .box :hover {
     transform: rotateZ(70deg);
-    background-color: purple;
+    background-color: #611616;
     opacity: 50%;
     transition: 2s;
 }
