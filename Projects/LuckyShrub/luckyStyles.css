@@ -12,6 +12,7 @@ header {
     background-color: #6e6d6d;
     color: #fff;
     text-align: center;
+    min-height: 150px;
 }
 
 nav ul {
@@ -34,6 +35,11 @@ nav ul li a {
 main {
     display: flex;
     flex-wrap: wrap;
+    min-height: calc(100vh - 400px);
+}
+
+.promotion h2 {
+    padding: 15px;
 }
 
 
@@ -44,7 +50,7 @@ main {
     padding: 20px;
     margin: 10px;
     border: 1px solid black;
-
+    justify-content: center;
 }
 
 .infoGrid {
@@ -63,12 +69,16 @@ main {
     display:flex;
     flex-direction: row;
     text-align: center;
-    justify-content: space-evenly;
-    
+    text-align: center;
+    justify-content: space-around;
 }
 
 footer {
+    min-height: 150px;
     background-color: #6e6d6d;
     color: #fff;
-    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
 }
