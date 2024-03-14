@@ -27,3 +27,10 @@ importing default: At the top of the import file..
     named import:   import {addTwo} from "./addTwo.js"
 
 
+
+React treats lowrecase components as regualr HTML elements.
+This is why capatilizing components is important to distinguish JSX components.  
+
+Transpiling converts JSX into HTML.
+ Babel does is this: it allows you to transpile JSX code (which cannot be understood by a browser) 
+ into plain JavaScript code (which can be understood by a browser).
