@@ -1,0 +1,29 @@
+JS modules:
+
+Modules are .js files that export a function or functions. 
+There are two main methods of exporting a module...
+*   Default export:
+
+    function addTwo(a,b){
+        return a + b;
+    };
+
+    export default addTwo;
+
+*   Named export:
+
+    function addTwo(a,b){
+        return a + b;
+    }
+
+    export {addTwo};
+
+
+Importing a module is just as easy.
+
+importing default: At the top of the import file..
+    
+    import default: import addTwo from "./addTwo.js"
+    named import:   import {addTwo} from "./addTwo.js"
+
+
