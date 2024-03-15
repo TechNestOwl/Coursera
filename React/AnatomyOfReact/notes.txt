@@ -34,3 +34,14 @@ This is why capatilizing components is important to distinguish JSX components.
 Transpiling converts JSX into HTML.
  Babel does is this: it allows you to transpile JSX code (which cannot be understood by a browser) 
  into plain JavaScript code (which can be understood by a browser).
+
+
+
+
+Organizing React File Structure:
+
+Two Main Approaches..
+1. Grouping by features.
+2. Grouping by file type.
+
+Don't nest folders too deep. Keep it simple.

@@ -1,7 +1,7 @@
 # Coursera
 
     My goal for enrolling in this course is to galavnize 
-    my current knowledge base of programming in Javascript,
+    my current knowledge base of Front-End Development,
     and to bridge the gaps of understaing in advanced concepts.
 
     I have a dedicated work space in which I also use to work my 
