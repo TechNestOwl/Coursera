@@ -47,10 +47,53 @@ Two Main Approaches..
 Don't nest folders too deep. Keep it simple.
 
 
-
+*****
 
         JSX:
 JSX allows me as a developer to write HTML directly inside Javascript code. 
 Once I pass props parameter to a funcitonal component, I can then access that objects properities with dot notation. 
+The "HTML" code in JSX needs to be wrapped in a top level element, or at least a 'fragment' => <>   </>
+Since class is already used in JavaScript, "className" is used instead. Note the camelCase.
 
 Anything that is placed within curly braces in JSX, is essentially javascript code. 
+ex: 
+JSX...
+function List(props){
+
+    return(
+        <ul>
+            <li>{2 * 2}</li>
+            <li>{"He" + "Him"}</li>
+            <li>{16/2}</li>
+            <li>{props.firstName}</li>
+        </ul>
+    )
+};
+
+export default List;
+
+
+*****
+
+
+
+        Props and Childeren
+
+props.children is automatically passed to every component. 
+
+This:
+<Example children="I'm a child porp" />
+
+is the same as: 
+
+<Example>
+
+    I'm a child prop
+
+</Example>
+
+The "I'm a child prop" is  a texst child of the Example component. 
+
+
+*****
+
