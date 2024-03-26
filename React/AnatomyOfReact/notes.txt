@@ -47,3 +47,10 @@ Two Main Approaches..
 Don't nest folders too deep. Keep it simple.
 
 
+
+
+        JSX:
+JSX allows me as a developer to write HTML directly inside Javascript code. 
+Once I pass props parameter to a funcitonal component, I can then access that objects properities with dot notation. 
+
+Anything that is placed within curly braces in JSX, is essentially javascript code. 
